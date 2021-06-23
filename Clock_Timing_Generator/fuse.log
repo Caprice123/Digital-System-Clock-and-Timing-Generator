@@ -1,0 +1,20 @@
+Running: D:\Xilinx\14.7\ISE_DS\ISE\bin\nt64\unwrapped\fuse.exe -intstyle ise -incremental -o D:/Clock_Timing_Generator/vga_thresh_clock_tb_isim_beh.exe -prj D:/Clock_Timing_Generator/vga_thresh_clock_tb_beh.prj work.vga_thresh_clock_tb 
+ISim P.20131013 (signature 0x7708f090)
+Number of CPUs detected in this system: 12
+Turning on mult-threading, number of parallel sub-compilation jobs: 24 
+Determining compilation order of HDL files
+Parsing VHDL file "D:/Clock_Timing_Generator/toggle_flip_flop.vhd" into library work
+Parsing VHDL file "D:/Clock_Timing_Generator/vga_thresh_clock_tb.vhd" into library work
+Starting static elaboration
+Completed static elaboration
+Compiling package standard
+Compiling package std_logic_1164
+Compiling package numeric_std
+Compiling architecture rtl_toggle_flip_flop of entity toggle_flip_flop [toggle_flip_flop_default]
+Compiling architecture behavior of entity vga_thresh_clock_tb
+Time Resolution for simulation is 1ps.
+Waiting for 1 sub-compilation(s) to finish...
+Compiled 6 VHDL Units
+Built simulation executable D:/Clock_Timing_Generator/vga_thresh_clock_tb_isim_beh.exe
+Fuse Memory Usage: 36116 KB
+Fuse CPU Usage: 671 ms

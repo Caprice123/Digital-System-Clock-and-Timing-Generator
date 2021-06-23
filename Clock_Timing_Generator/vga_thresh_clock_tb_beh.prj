@@ -1,0 +1,2 @@
+vhdl work "toggle_flip_flop.vhd"
+vhdl work "vga_thresh_clock_tb.vhd"

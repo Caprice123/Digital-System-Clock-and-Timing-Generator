@@ -1,4 +1,0 @@
-vhdl work "reg.vhd"
-vhdl work "counter_clk.vhd"
-vhdl work "comparator.vhd"
-vhdl work "pwm_motor_tb.vhd"

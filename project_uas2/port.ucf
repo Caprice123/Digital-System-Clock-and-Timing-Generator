@@ -1,6 +1,0 @@
-# INPUT clock divider for vga and thresholding
-NET "camera_clk" LOC "U16";
-NET "camcon_status" LOC "E19";
-
-# OUTPUT clock divider for vga and thresholding
-NET "clk_out" LOC "L1";

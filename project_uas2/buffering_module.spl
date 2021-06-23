@@ -1,6 +1,0 @@
-[Inputs]
-clk_buffering
-d_buffering
-[Outputs]
-output_buffering
-[BiDir]

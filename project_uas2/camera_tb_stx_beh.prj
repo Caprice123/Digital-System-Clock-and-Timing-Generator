@@ -1,4 +1,0 @@
-vhdl isim_temp "vga_display.vhd"
-vhdl isim_temp "camera_module.vhd"
-vhdl isim_temp "buffering_module.vhd"
-vhdl isim_temp "camera_tb.vhd"

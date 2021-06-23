@@ -1,6 +1,0 @@
-# INPUT pwm_motor clock from on board basys3
-NET "on_board_clk" LOC "W5";
-NET "reset" LOC "U19";
-
-# OUTPUT pwm_motor clock
-NET "pwm_motor_clk" LOC "P1";

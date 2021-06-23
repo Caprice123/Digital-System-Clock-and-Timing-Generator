@@ -1,3 +1,0 @@
-vhdtdtfi -lib work buffering_module.vhd -prj project_uas -o buffering_module.spl -module buffering_module -template D:/Xilinx/14.7/ISE_DS/ISE//data/splfile.tft -deleteonerror 
-spl2sym -intstyle ise -family xbr buffering_module.spl D:/project_uas/buffering_module.sym 
-vhdtdtfi -prj project_uas -o D:/project_uas/buffering_module.vhi -module buffering_module -template D:/Xilinx/14.7/ISE_DS/ISE//data/vhdlinst.tft -deleteonerror -lib work buffering_module.vhd 

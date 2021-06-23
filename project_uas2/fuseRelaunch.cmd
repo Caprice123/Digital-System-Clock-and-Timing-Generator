@@ -1,1 +1,0 @@
--intstyle "ise" -incremental -o "D:/project_uas2/pwm_motor_tb_isim_beh.exe" -prj "D:/project_uas2/pwm_motor_tb_beh.prj" "work.pwm_motor_tb" 

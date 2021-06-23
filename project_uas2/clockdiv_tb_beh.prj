@@ -1,5 +1,0 @@
-vhdl work "pwm_motor_clk.vhd"
-vhdl work "counter_clk.vhd"
-vhdl work "comparator.vhd"
-vhdl work "clockdivider.vhd"
-vhdl work "clockdiv_tb.vhd"

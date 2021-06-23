@@ -1,0 +1,1 @@
+-intstyle "ise" -incremental -o "D:/Clock_Timing_Generator/vga_thresh_clock_tb_isim_beh.exe" -prj "D:/Clock_Timing_Generator/vga_thresh_clock_tb_beh.prj" "work.vga_thresh_clock_tb" 
