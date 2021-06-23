@@ -11,7 +11,7 @@ The project is coded using VHDL language.
   This camera can get 8 bit of one period of clock.
 * VGA Display
   Type of VGA Display that is used in market is displayed on this image.
-  ![Image of VGA Display](/images/vga_display.png)
+  ![Image of VGA Display](/images/vga_specification.png)
   At this project, the specification for this project is 640 x 480, 60Hz with 25.175 MHz clock.
 * Motor Driver
   Motor Driver that is used on this project is Pmod hb5. This motor driver need 2 kHz frequency clock. In the digital area, PWM is created using some counter that has 8 bit. 
