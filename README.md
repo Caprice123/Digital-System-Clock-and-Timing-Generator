@@ -11,8 +11,7 @@ The project is coded using VHDL language.
   This camera can get 8 bit of one period of clock.
 * VGA Display
   Type of VGA Display that is used in market is displayed on this image.
-
-
+  ![Image of VGA Display](/images/vga_display.png)
   At this project, the specification for this project is 640 x 480, 60Hz with 25.175 MHz clock.
 * Motor Driver
   Motor Driver that is used on this project is Pmod hb5. This motor driver need 2 kHz frequency clock. In the digital area, PWM is created using some counter that has 8 bit. 
@@ -20,10 +19,15 @@ The project is coded using VHDL language.
   Basys3 has on board clock, which is 100 MHz and this clock must be converted into 500 kHz using frequency divider.
 
 ## Steps
-1. Download Xilinx software in [this link] (https://www.xilinx.com/support/download.html). 
+1. Download Xilinx software in this link (https://www.xilinx.com/support/download.html). 
 2. Clone this repository.
+  ![Image of Clone repository](/images/clone_repository.png)
 3. Open Project in Xilinx software and open Clock_Timing_Generator.xise
+  ![Image of Open Project](/images/open_project.png)
 4. Click on the implementation button in Hierarchy.
+  ![Image of Implementation](/images/implementation.png)
 5. Click on the file that will be testbenched.
+  ![Image of open file](/images/open_file.png)
 6. Click iSim Simulator and click simulate behaviour.
+  ![Image of simulation](/images/simulate.png)
 
