@@ -1,0 +1,7 @@
+AR camera_module rtl_camera D:/project_uas/camera_module.vhd sub00/vhpl02 1619415848
+EN vga_display NULL D:/project_uas/vga_display.vhd sub00/vhpl03 1618061241
+EN camera_module NULL D:/project_uas/camera_module.vhd sub00/vhpl00 1619415847
+AR camera_module behavioral D:/project_uas/camera_module.vhd sub00/vhpl01 1618041990
+EN clockdivider NULL D:/project_uas/clockdivider.vhd sub00/vhpl05 1621419991
+AR vga_display rtl_display D:/project_uas/vga_display.vhd sub00/vhpl04 1618061242
+AR clockdivider rtl_divider D:/project_uas/clockdivider.vhd sub00/vhpl06 1621419992

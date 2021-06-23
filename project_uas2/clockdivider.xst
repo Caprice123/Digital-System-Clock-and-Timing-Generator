@@ -1,0 +1,5 @@
+set -tmpdir "D:/project_uas/xst/projnav.tmp"
+set -xsthdpdir "D:/project_uas/xst"
+elaborate
+-ifn clockdivider.prj
+-ifmt mixed

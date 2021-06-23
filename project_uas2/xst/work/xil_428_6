@@ -1,0 +1,9 @@
+V3 6
+FL D:/project_uas/camera_module.vhd 2021/04/10.15:07:07 P.20131013
+EN work/camera_module 1619264274 FL D:/project_uas/camera_module.vhd \
+      PB ieee/std_logic_1164 1381692176 PB ieee/NUMERIC_STD 1381692181
+AR work/camera_module/rtl_camera 1619264275 \
+      FL D:/project_uas/camera_module.vhd EN work/camera_module 1619264274
+EN work/clockdivider 0 FL D:/project_uas/clockdivider.vhd PB ieee/std_logic_1164 1381692176
+AR work/clockdivider/rtl_divider 0 \
+      FL D:/project_uas/clockdivider.vhd EN work/clockdivider 0

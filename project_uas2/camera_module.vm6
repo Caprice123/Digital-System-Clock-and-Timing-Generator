@@ -1,0 +1,138 @@
+NDS Database:  version P.20131013
+
+NDS_INFO | xbr | 2C256144 | XC2C256-6-TQ144
+
+DEVICE | 2C256 | 2C256144 | 
+
+NETWORK | camera_module | 0 | 0 | 1073758214 | 0
+
+INPUT_INSTANCE | 0 | 0 | NULL | clk_camera_II | camera_module_COPY_0_COPY_0 | 16 | 1 | 1
+INPUT_NODE_TYPE | 0 | 5 | II_IN
+NODE | clk_camera | 66 | PI | 0 | 0 | camera_module_COPY_0_COPY_0 | NULL | NULL | NULL | 0 | 100 | NOTYPE
+OUTPUT_NODE_TYPE | 3 | 5 | II_FCLK
+NODE | clk_camera_II/FCLK | 72 | ? | 0 | 0 | camera_module_COPY_0_COPY_0 | NULL | NULL | clk_camera_II | 3 | 5 | II_FCLK
+
+INPUT_INSTANCE | 0 | 0 | NULL | d_camera_II | camera_module_COPY_0_COPY_0 | 16 | 1 | 1
+INPUT_NODE_TYPE | 0 | 5 | II_IN
+NODE | d_camera | 67 | PI | 0 | 0 | camera_module_COPY_0_COPY_0 | NULL | NULL | NULL | 0 | 100 | NOTYPE
+OUTPUT_NODE_TYPE | 0 | 5 | II_IMUX
+NODE | d_camera_II/UIM | 71 | ? | 0 | 0 | camera_module_COPY_0_COPY_0 | NULL | NULL | d_camera_II | 0 | 5 | II_IMUX
+
+MACROCELL_INSTANCE | PrldLow | output_camera_MC | camera_module_COPY_0_COPY_0 | 1024 | 2 | 1
+INPUT_NODE_TYPE | 1 | 100 | NOTYPE
+NODE | d_camera_II/UIM | 71 | ? | 0 | 0 | camera_module_COPY_0_COPY_0 | NULL | NULL | d_camera_II | 0 | 5 | II_IMUX
+INPUT_NODE_TYPE | 1 | 100 | NOTYPE
+NODE | clk_camera_II/FCLK | 72 | ? | 0 | 0 | camera_module_COPY_0_COPY_0 | NULL | NULL | clk_camera_II | 3 | 5 | II_FCLK
+OUTPUT_NODE_TYPE | 0 | 0 | MC_Q
+NODE | output_camera_MC.Q | 74 | ? | 0 | 0 | camera_module_COPY_0_COPY_0 | NULL | output_camera_MC.Q | output_camera_MC | 0 | 0 | MC_Q
+
+SIGNAL_INSTANCE | output_camera_MC.SI | output_camera_MC | 0 | 1 | 2
+INPUT_NODE_TYPE | 1 | 100 | NOTYPE
+NODE | d_camera_II/UIM | 71 | ? | 0 | 0 | camera_module_COPY_0_COPY_0 | NULL | NULL | d_camera_II | 0 | 5 | II_IMUX
+OUTPUT_NODE_TYPE | 1 | 9 | MC_SI_D1
+SIGNAL | NODE | output_camera_MC.D1 | 69 | ? | 0 | 0 | output_camera_MC | NULL | NULL | output_camera_MC.SI | 1 | 9 | MC_SI_D1
+SPPTERM | 1 | IV_TRUE | d_camera_II/UIM
+OUTPUT_NODE_TYPE | 2 | 9 | MC_SI_D2
+SIGNAL | NODE | output_camera_MC.D2 | 70 | ? | 0 | 0 | output_camera_MC | NULL | NULL | output_camera_MC.SI | 2 | 9 | MC_SI_D2
+SPPTERM | 0 | IV_ZERO
+
+SRFF_INSTANCE | output_camera_MC.REG | output_camera_MC | 0 | 2 | 1
+INPUT_NODE_TYPE | 0 | 8 | SRFF_D
+NODE | output_camera_MC.D | 68 | ? | 0 | 0 | output_camera_MC | NULL | NULL | output_camera_MC.XOR | 0 | 7 | ALU_F
+INPUT_NODE_TYPE | 1 | 8 | SRFF_C
+NODE | clk_camera_II/FCLK | 72 | ? | 0 | 0 | camera_module_COPY_0_COPY_0 | NULL | NULL | clk_camera_II | 3 | 5 | II_FCLK
+OUTPUT_NODE_TYPE | 0 | 8 | SRFF_Q
+NODE | output_camera_MC.Q | 73 | ? | 0 | 0 | output_camera_MC | NULL | NULL | output_camera_MC.REG | 0 | 8 | SRFF_Q
+
+OUTPUT_INSTANCE | 0 | output_camera | camera_module_COPY_0_COPY_0 | 3 | 1 | 1
+INPUT_NODE_TYPE | 0 | 6 | OI_IN
+NODE | output_camera_MC.Q | 74 | ? | 0 | 0 | camera_module_COPY_0_COPY_0 | NULL | output_camera_MC.Q | output_camera_MC | 0 | 0 | MC_Q
+OUTPUT_NODE_TYPE | 0 | 6 | OI_OUT
+NODE | output_camera | 75 | PO | 0 | 0 | camera_module_COPY_0_COPY_0 | NULL | NULL | output_camera | 0 | 6 | OI_OUT
+
+FB_INSTANCE | FOOBAR1_ | camera_module_COPY_0_COPY_0 | 0 | 0 | 0
+FBPIN | 3 | output_camera_MC | 1 | NULL | 0 | output_camera | 1 | 143 | 51200
+FBPIN | 4 | NULL | 0 | d_camera_II | 1 | NULL | 0 | 142 | 49152
+
+FB_INSTANCE | FOOBAR2_ | camera_module_COPY_0_COPY_0 | 0 | 0 | 0
+
+FB_INSTANCE | FOOBAR3_ | camera_module_COPY_0_COPY_0 | 0 | 0 | 0
+
+FB_INSTANCE | FOOBAR4_ | camera_module_COPY_0_COPY_0 | 0 | 0 | 0
+
+FB_INSTANCE | FOOBAR5_ | camera_module_COPY_0_COPY_0 | 0 | 0 | 0
+FBPIN | 4 | NULL | 0 | clk_camera_II | 1 | NULL | 0 | 32 | 57344
+
+FB_INSTANCE | FOOBAR6_ | camera_module_COPY_0_COPY_0 | 0 | 0 | 0
+
+FB_INSTANCE | FOOBAR7_ | camera_module_COPY_0_COPY_0 | 0 | 0 | 0
+
+FB_INSTANCE | FOOBAR8_ | camera_module_COPY_0_COPY_0 | 0 | 0 | 0
+
+FB_INSTANCE | FOOBAR9_ | camera_module_COPY_0_COPY_0 | 0 | 0 | 0
+
+FB_INSTANCE | FOOBAR10_ | camera_module_COPY_0_COPY_0 | 0 | 0 | 0
+
+FB_INSTANCE | FOOBAR11_ | camera_module_COPY_0_COPY_0 | 0 | 0 | 0
+
+FB_INSTANCE | FOOBAR12_ | camera_module_COPY_0_COPY_0 | 0 | 0 | 0
+
+FB_INSTANCE | FOOBAR13_ | camera_module_COPY_0_COPY_0 | 0 | 0 | 0
+
+FB_INSTANCE | FOOBAR14_ | camera_module_COPY_0_COPY_0 | 0 | 0 | 0
+
+FB_INSTANCE | FOOBAR15_ | camera_module_COPY_0_COPY_0 | 0 | 0 | 0
+
+FB_INSTANCE | FOOBAR16_ | camera_module_COPY_0_COPY_0 | 0 | 0 | 0
+
+FB_INSTANCE | INPUTPINS_FOOBAR17_ | camera_module_COPY_0_COPY_0 | 0 | 0 | 0
+
+CT_INSTANCE | FOOBAR1_ | FOOBAR1__ctinst | camera_module_COPY_0_COPY_0 | 0 | 0 | 0
+
+CT_INSTANCE | FOOBAR2_ | FOOBAR2__ctinst | camera_module_COPY_0_COPY_0 | 0 | 0 | 0
+
+CT_INSTANCE | FOOBAR3_ | FOOBAR3__ctinst | camera_module_COPY_0_COPY_0 | 0 | 0 | 0
+
+CT_INSTANCE | FOOBAR4_ | FOOBAR4__ctinst | camera_module_COPY_0_COPY_0 | 0 | 0 | 0
+
+CT_INSTANCE | FOOBAR5_ | FOOBAR5__ctinst | camera_module_COPY_0_COPY_0 | 0 | 0 | 0
+
+CT_INSTANCE | FOOBAR6_ | FOOBAR6__ctinst | camera_module_COPY_0_COPY_0 | 0 | 0 | 0
+
+CT_INSTANCE | FOOBAR7_ | FOOBAR7__ctinst | camera_module_COPY_0_COPY_0 | 0 | 0 | 0
+
+CT_INSTANCE | FOOBAR8_ | FOOBAR8__ctinst | camera_module_COPY_0_COPY_0 | 0 | 0 | 0
+
+CT_INSTANCE | FOOBAR9_ | FOOBAR9__ctinst | camera_module_COPY_0_COPY_0 | 0 | 0 | 0
+
+CT_INSTANCE | FOOBAR10_ | FOOBAR10__ctinst | camera_module_COPY_0_COPY_0 | 0 | 0 | 0
+
+CT_INSTANCE | FOOBAR11_ | FOOBAR11__ctinst | camera_module_COPY_0_COPY_0 | 0 | 0 | 0
+
+CT_INSTANCE | FOOBAR12_ | FOOBAR12__ctinst | camera_module_COPY_0_COPY_0 | 0 | 0 | 0
+
+CT_INSTANCE | FOOBAR13_ | FOOBAR13__ctinst | camera_module_COPY_0_COPY_0 | 0 | 0 | 0
+
+CT_INSTANCE | FOOBAR14_ | FOOBAR14__ctinst | camera_module_COPY_0_COPY_0 | 0 | 0 | 0
+
+CT_INSTANCE | FOOBAR15_ | FOOBAR15__ctinst | camera_module_COPY_0_COPY_0 | 0 | 0 | 0
+
+CT_INSTANCE | FOOBAR16_ | FOOBAR16__ctinst | camera_module_COPY_0_COPY_0 | 0 | 0 | 0
+
+PLA | FOOBAR1_ | 1
+PLA_TERM | 16 | 
+SPPTERM | 1 | IV_TRUE | d_camera_II/UIM
+
+
+IOSTD | LVCMOS18
+clk_camera | LVCMOS18
+d_camera | LVCMOS18
+output_camera | LVCMOS18
+
+
+FB_ORDER_OF_INPUTS | FOOBAR1_ | 3 | d_camera | 142
+
+FB_IMUX_INDEX | FOOBAR1_ | -1 | -1 | -1 | 3 | -1 | -1 | -1 | -1 | -1 | -1 | -1 | -1 | -1 | -1 | -1 | -1 | -1 | -1 | -1 | -1 | -1 | -1 | -1 | -1 | -1 | -1 | -1 | -1 | -1 | -1 | -1 | -1 | -1 | -1 | -1 | -1 | -1 | -1 | -1 | -1
+
+
+GLOBAL_FCLK | clk_camera | 1 | 1

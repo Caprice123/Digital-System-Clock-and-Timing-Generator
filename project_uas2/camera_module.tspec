@@ -1,0 +1,4 @@
+AUTO_TS_P2P:FROM:clk_camera:TO:output_camera:1
+AUTO_TS_F2P:FROM:output_camera_MC.Q:TO:output_camera:1
+AUTO_TS_P2F:FROM:d_camera:TO:output_camera_MC.D:1
+AUTO_TS_P2F:FROM:clk_camera:TO:clk_camera_II/FCLK:1

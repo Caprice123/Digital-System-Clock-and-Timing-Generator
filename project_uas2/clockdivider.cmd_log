@@ -1,0 +1,2 @@
+vhdtdtfi -prj project_uas -o D:/project_uas/clockdivider.vhi -module clockdivider -template D:/Xilinx/14.7/ISE_DS/ISE//data/vhdlinst.tft -deleteonerror -lib work clockdivider.vhd 
+vhdtdtfi -prj project_uas -o D:/project_uas/clockdivider.vhi -module clockdivider -template D:/Xilinx/14.7/ISE_DS/ISE//data/vhdlinst.tft -deleteonerror -lib work clockdivider.vhd 
