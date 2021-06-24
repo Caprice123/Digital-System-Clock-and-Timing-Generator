@@ -8,8 +8,10 @@ The project is coded using VHDL language.
 
 ## Consideration
 * Camera OV7670
-  This camera can get 8 bit of one period of clock.
+  
+  This camera can get 8 bit of one period of clock while VGA display need 16 bit for 1 pixel so that camera must run 2 times faster than VGA. If VGA's clock is 25 MHz then Camera OV7670 need 50 MHz.
 * VGA Display
+  
   Type of VGA Display that is used in market is displayed on this image.
   ![Image of VGA Display](/images/vga_specification.png)
   
