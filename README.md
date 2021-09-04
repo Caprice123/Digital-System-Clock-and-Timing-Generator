@@ -23,7 +23,7 @@ The project is coded using VHDL language.
 
 ## Steps
 1. Download Xilinx software in this link (https://www.xilinx.com/support/download.html). 
-2. Clone this repository.
+2. Download this repository.
   ![Image of Clone repository](/images/clone_repository.png)
 3. Open Project in Xilinx software and open Clock_Timing_Generator.xise
   ![Image of Open Project](/images/open_project.png)
